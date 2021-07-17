@@ -1,0 +1,60 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Untitled2.ipynb",
+      "provenance": [],
+      "authorship_tag": "ABX9TyPMH+4vXpyFEDxJxLDh9/gw",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/C9341-tugba/phyton_project1/blob/main/second\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "-z0gI3XyJoyK",
+        "outputId": "8b7497ac-a7b5-4f1f-ced0-4e20cd2abe02"
+      },
+      "source": [
+        "import math\n",
+        "total = int(input('Enter seconds here > '))\n",
+        "hours = total / 3600\n",
+        "minutes = (hours - math.trunc(hours)) * 60\n",
+        "seconds = (minutes - math.trunc(minutes)) * 60\n",
+        "print(f'{total} seconds is {math.trunc(hours)} hours, {math.trunc(minutes)} minutes and {math.trunc(seconds)} seconds.')"
+      ],
+      "execution_count": 2,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Enter seconds here > 1234\n",
+            "1234 seconds is 0 hours, 20 minutes and 33 seconds.\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    }
+  ]
+}

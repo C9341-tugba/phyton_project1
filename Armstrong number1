@@ -1,0 +1,818 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Untitled",
+      "provenance": [],
+      "authorship_tag": "ABX9TyOZbrI3SLUx0wTHZmoCeK91",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/C9341-tugba/phyton_project1/blob/main/Armstrong%20number1\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "vxebKA1qyFSA",
+        "outputId": "e50887a8-75d1-4fda-cf88-d0a0adcf00a5"
+      },
+      "source": [
+        "sample= f\"{2**3}\"\n",
+        "print(sample)"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "8\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "b58Kp9g7y2fr"
+      },
+      "source": [
+        "name= \"mariam\""
+      ],
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "5ph6Xn1d90Ya",
+        "outputId": "b72f91be-360c-4941-f1be-a6ca1e066806"
+      },
+      "source": [
+        "sentence = input(\"Enter sentence: \")\n",
+        "longest = max(sentence.split(), key=len)\n",
+        "print(\"Longest word is: \", longest)\n",
+        "\n"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Enter sentence: at\n",
+            "Longest word is:  at\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "euWK4neS90S-"
+      },
+      "source": [
+        "names = [\"Ahmed\", \"Aisha\", \"Adam\", \"Joseph\", \"Gabriel\"]names = [\"Ahmed\", \"Aisha\", \"Adam\", \"Joseph\", \"Gabriel\"]"
+      ],
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "a8qMM60R90Pe"
+      },
+      "source": [
+        ""
+      ],
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "vTCmpgfry2cJ",
+        "outputId": "5b04d706-90b4-49b8-f228-69f98956c412"
+      },
+      "source": [
+        "var_str = \"In God we Trust\"\n",
+        "var_str.lower()\n",
+        "print(var_str) \n",
+        "var_str = var_str.lower()\n",
+        "print(var_str)"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "In God we Trust\n",
+            "in god we trust\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "u5lRnYdjy2W6",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "dad95d82-9b2b-4a07-cc04-6507a2ebdc1c"
+      },
+      "source": [
+        "   warning = 'You must quit smoking!' \n",
+        "   print(len(list(warning)))   \n"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "22\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "nwIFpG7Jy2Ul",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "b1a51e48-cc5d-46a1-ea37-fe43c053708f"
+      },
+      "source": [
+        "string_1 = \"i quit smoking\"\n",
+        "new_list_1 = list(string_1)\n",
+        "print (new_list_1)\n",
+        "new_list_2 = [string_1]\n",
+        "print(new_list_2)"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "['i', ' ', 'q', 'u', 'i', 't', ' ', 's', 'm', 'o', 'k', 'i', 'n', 'g']\n",
+            "['i quit smoking']\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "vHSsrBMxy2R9",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "fe9ac0fa-a48d-4803-b0cc-5e7cd6ee4a62"
+      },
+      "source": [
+        "my_list = [\"joseph\",'clsrusway', 2020]\n",
+        "new_list_1 = list(my_list)\n",
+        "new_list_2 = [my_list]\n",
+        "print(new_list_1)\n",
+        "print(len(new_list_1))\n",
+        "print(new_list_2)\n",
+        "print(len(new_list_2))\n"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "['joseph', 'clsrusway', 2020]\n",
+            "3\n",
+            "[['joseph', 'clsrusway', 2020]]\n",
+            "1\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "t8y4GsuRy2PW",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "947977a2-0538-43e6-bbbb-2a68e4e5336f"
+      },
+      "source": [
+        "year = list('2002')\n",
+        "print(year) "
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "['2', '0', '0', '2']\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "fIvbNMkgy2MV",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 181
+        },
+        "outputId": "358112df-fcda-468c-ce2a-e15436b567f7"
+      },
+      "source": [
+        "year = list[2002]\n",
+        "print[year]"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "error",
+          "ename": "TypeError",
+          "evalue": "ignored",
+          "traceback": [
+            "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+            "\u001b[0;31mTypeError\u001b[0m                                 Traceback (most recent call last)",
+            "\u001b[0;32m<ipython-input-6-8803ca38ab4c>\u001b[0m in \u001b[0;36m<module>\u001b[0;34m()\u001b[0m\n\u001b[0;32m----> 1\u001b[0;31m \u001b[0myear\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0mlist\u001b[0m\u001b[0;34m[\u001b[0m\u001b[0;36m2002\u001b[0m\u001b[0;34m]\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m      2\u001b[0m \u001b[0mprint\u001b[0m\u001b[0;34m[\u001b[0m\u001b[0myear\u001b[0m\u001b[0;34m]\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+            "\u001b[0;31mTypeError\u001b[0m: 'type' object is not subscriptable"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "xxe2Spqky18i"
+      },
+      "source": [
+        "colors = ['red','purple', 'blue', ]"
+      ],
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "XBJyZO8dAcBj",
+        "outputId": "e8f9e617-a7a8-4f26-df72-1e9421e5e5b2"
+      },
+      "source": [
+        "yy = ['ali']\n",
+        "print(yy[::-1])"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "['ali']\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "lQ8EYLL6Ab-B",
+        "outputId": "d876e4b2-556f-4805-fcfe-87fd98181e0c"
+      },
+      "source": [
+        "print(yy[0][::-1])"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "ila\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "1nhFELzdAb7O",
+        "outputId": "dbf8c623-4713-4b2f-bba3-360fb03ed76d"
+      },
+      "source": [
+        "mix_list = [1,[1,'one', 2, 'two', 3, 'three'], 4]\n",
+        "print(mix_list[1][1:6:2])"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "['one', 'two', 'three']\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "KMtBo1RJAb4N",
+        "outputId": "1eb4b37d-6e7f-40bd-feae-6f24bbb353d7"
+      },
+      "source": [
+        "letters = ['a','b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j']\n",
+        "print(letters[7:3:-1])\n",
+        "print(letters[2:6:-1])"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "['h', 'g', 'f', 'e']\n",
+            "[]\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "FmnDhADUAb0h",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "03833c4e-5517-4702-8fc9-7ffdc7609b9b"
+      },
+      "source": [
+        "date ='12/07/2021'\n",
+        "set(date)"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "{'/', '0', '1', '2', '7'}"
+            ]
+          },
+          "metadata": {
+            "tags": []
+          },
+          "execution_count": 1
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "HEUj8Pp-c_lY",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 129
+        },
+        "outputId": "2b11f9ac-4100-49d2-f250-6420279f3baa"
+      },
+      "source": [
+        "flowers = ['Rose', 'Orchid', 'Tulip']\n",
+        "count1 = len(Rose)\n",
+        "count2 = Orchid\n",
+        "\n",
+        "while count1 >0 :\n",
+        "    print(flowers[])\n",
+        "    count1 -= 5\n",
+        "    count2 += 6"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "error",
+          "ename": "SyntaxError",
+          "evalue": "ignored",
+          "traceback": [
+            "\u001b[0;36m  File \u001b[0;32m\"<ipython-input-16-31ae31ddb679>\"\u001b[0;36m, line \u001b[0;32m6\u001b[0m\n\u001b[0;31m    print(flowers[])\u001b[0m\n\u001b[0m                  ^\u001b[0m\n\u001b[0;31mSyntaxError\u001b[0m\u001b[0;31m:\u001b[0m invalid syntax\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 130
+        },
+        "id": "5qfBjUyJuLpV",
+        "outputId": "2b11f9ac-4100-49d2-f250-6420279f3baa"
+      },
+      "source": [
+        "flowers = ['Rose', 'Orchid', 'Tulip']\n",
+        "count1 = len(Rose)\n",
+        "count2 = Orchid\n",
+        "\n",
+        "while count1 >0 :\n",
+        "    print(flowers[])\n",
+        "    count1 -= 5\n",
+        "    count2 += 6"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "error",
+          "ename": "SyntaxError",
+          "evalue": "ignored",
+          "traceback": [
+            "\u001b[0;36m  File \u001b[0;32m\"<ipython-input-16-31ae31ddb679>\"\u001b[0;36m, line \u001b[0;32m6\u001b[0m\n\u001b[0;31m    print(flowers[])\u001b[0m\n\u001b[0m                  ^\u001b[0m\n\u001b[0;31mSyntaxError\u001b[0m\u001b[0;31m:\u001b[0m invalid syntax\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "bx-5q8p1c-5P",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "eeb95d6f-80e7-41f8-ff52-2e83d561aa9d"
+      },
+      "source": [
+        "iterable = [1, 2, 3, 4, 5]\n",
+        "for iterable in [1, 2, 3, 4, 5] :\n",
+        "  print(iterable)"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "1\n",
+            "2\n",
+            "3\n",
+            "4\n",
+            "5\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "c7Rfe2NUc-yl",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "881f382a-f899-4e96-b17e-6fd58f48e75a"
+      },
+      "source": [
+        "iterable = [1, 2, 3, 4]\n",
+        "for i in iterable :\n",
+        "    print(i)"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "1\n",
+            "2\n",
+            "3\n",
+            "4\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "wfGP8hMSc-t0",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "a25a3c5f-d4d5-49c6-acb5-37570d074679"
+      },
+      "source": [
+        "n = int(input('enter a number between 1-10'))\n",
+        "\n",
+        "for i in range(11):\n",
+        "    print('{}x{} = '.format(n, i), n*i)\n"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "enter a number between 1-106\n",
+            "6x0 =  0\n",
+            "6x1 =  6\n",
+            "6x2 =  12\n",
+            "6x3 =  18\n",
+            "6x4 =  24\n",
+            "6x5 =  30\n",
+            "6x6 =  36\n",
+            "6x7 =  42\n",
+            "6x8 =  48\n",
+            "6x9 =  54\n",
+            "6x10 =  60\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "JHxS7Yfsw-Tp",
+        "outputId": "4faf885d-4f7b-4fc8-f1b8-b1e8d39db684"
+      },
+      "source": [
+        "#@title Default title text\n",
+        "i = (input(\"Insert birth year \"))\n",
+        "w = str(i)\n",
+        "if i.isdigit() and len(i) == 4:\n",
+        "    q = int(i)\n",
+        "    if (q - 1960) % 12 == 0:\n",
+        "        a = \"Mouse\"\n",
+        "    elif (q - 1960) % 12 == 1:    \n",
+        "        a = \"Cow\"\n",
+        "    elif (q - 1960) % 12 == 2:\n",
+        "        a = \"Tiger\"\n",
+        "    elif (q - 1960) % 12 == 3:    \n",
+        "        a = \"Rabbit\"\n",
+        "    elif (q - 1960) % 12 == 4:\n",
+        "        a = \"Dragon\"\n",
+        "    elif (q - 1960) % 12 == 5:    \n",
+        "        a = \"Snake\"\n",
+        "    elif (q - 1960) % 12 == 6:\n",
+        "        a = \"Horse\"\n",
+        "    elif (q - 1960) % 12 == 7:    \n",
+        "        a = \"Goat\"\n",
+        "    elif (q - 1960) % 12 == 8:\n",
+        "        a = \"Monkey\"\n",
+        "    elif (q - 1960) % 12 == 9:    \n",
+        "        a = \"Rooster\"\n",
+        "    elif (q - 1960) % 12 == 10:\n",
+        "        a = \"Dog\"\n",
+        "    elif (q - 1960) % 12 == 11:    \n",
+        "        a = \"Pig\"\n",
+        "    print(\"Your Zodiac sign:\", a)    \n",
+        "else:\n",
+        "    print(\"Please enter your four-digit year of birth\")\n"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Insert birth year 1988\n",
+            "Your Zodiac sign: Dragon\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "f0gpeBkjKlxd"
+      },
+      "source": [
+        ""
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 179
+        },
+        "id": "mKzQCgZhw-RI",
+        "outputId": "77a7a40d-2b98-4ce0-85e0-b0c68752e33e"
+      },
+      "source": [
+        "in(input(\"How are you: \")) "
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "How are you: xxx\n"
+          ],
+          "name": "stdout"
+        },
+        {
+          "output_type": "error",
+          "ename": "ValueError",
+          "evalue": "ignored",
+          "traceback": [
+            "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+            "\u001b[0;31mValueError\u001b[0m                                Traceback (most recent call last)",
+            "\u001b[0;32m<ipython-input-15-f63b85cd976f>\u001b[0m in \u001b[0;36m<module>\u001b[0;34m()\u001b[0m\n\u001b[0;32m----> 1\u001b[0;31m \u001b[0mint\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0minput\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m\"How are you: \"\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m",
+            "\u001b[0;31mValueError\u001b[0m: invalid literal for int() with base 10: 'xxx'"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "bBUPxGinw-OP",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "a20bb615-1ca1-4396-f781-5cac238e6db1"
+      },
+      "source": [
+        "year = int(input(\"Doğum yılınızı girin :  \"))\n",
+        "if year % 12 == 8:\n",
+        "    animal = \"Ejderha\"\n",
+        "elif year % 12 == 9:\n",
+        "    animal = \"Yılan\"\n",
+        "elif year % 12 == 10:\n",
+        "    animal = \"At\"\n",
+        "elif year % 12 == 11:\n",
+        "    animal = \"Keçi\"\n",
+        "elif year % 12 == 0:\n",
+        "    animal = \"Maymun\"\n",
+        "elif year % 12 == 1:\n",
+        "    animal = \"Horoz\"\n",
+        "elif year % 12 == 2:\n",
+        "    animal = \"Köpek\"\n",
+        "elif year % 12 == 3:\n",
+        "    animal = \"Domuz\"\n",
+        "elif year % 12 == 4:\n",
+        "    animal = \"Sıçan\"\n",
+        "elif year % 12 == 5:\n",
+        "    animal = \"Öküz\"\n",
+        "elif year % 12 == 6:\n",
+        "    animal = \"Kaplan\"\n",
+        "elif year % 12 == 7:\n",
+        "    animal = \"Tavşan\"\n",
+        "print(\"Burcunuz :\",animal)  "
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Doğum yılınızı girin :  1982\n",
+            "Burcunuz : Köpek\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "jjXN79TLw-L4"
+      },
+      "source": [
+        ""
+      ],
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "beI4sXCTw-Gr"
+      },
+      "source": [
+        ""
+      ],
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "I73plwWtw-EA"
+      },
+      "source": [
+        ""
+      ],
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "5Ju3Oqujw-BX",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "5a3215a5-e068-4f96-dee0-bbf3866dd81b"
+      },
+      "source": [
+        "while True:\n",
+        "  number = input(\"enter a positive number : \")\n",
+        "  digits = len(number)\n",
+        "  summ = 0\n",
+        "  if not number.isdigit() :\n",
+        "    print(number, \"is valid entery\")\n",
+        "  elif int(number) >= 0 :\n",
+        "      for i in range(digits) :\n",
+        "          summ = summ + int(number[i]) ** digits\n",
+        "\n",
+        "\n",
+        "      if summ == int(number):\n",
+        "         print(number, \"is an armstrong number \" )\n",
+        "         break\n",
+        "      else :\n",
+        "         print(number, \"is not an armstrong number \" )      \n",
+        "         break\n"
+      ],
+      "execution_count": 20,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "enter a positive number : 4338281769391370\n",
+            "4338281769391370 is an armstrong number \n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "aeH-XaWZw9-m"
+      },
+      "source": [
+        ""
+      ],
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "b8jIisi0w97Z"
+      },
+      "source": [
+        ""
+      ],
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}

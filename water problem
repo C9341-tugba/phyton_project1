@@ -1,0 +1,115 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Untitled23.ipynb",
+      "provenance": [],
+      "authorship_tag": "ABX9TyN/KvYhaYNy+FSGQUSLtTgA",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/C9341-tugba/phyton_project1/blob/main/water%20problem\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "H40Nz8C8qPfh"
+      },
+      "source": [
+        "letter1 = ['o', 's', 't', 't']\n",
+        "letter2 = ['n', 'i', 'e', 'w']\n",
+        "letter3 = ['e', 'x', ]\n",
+        "numbers = map(lambda x, y, z: x+y+z, letter1, letter2, letter3)"
+      ],
+      "execution_count": 3,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "nA589Nc_qTz5",
+        "outputId": "1d7b7338-70ac-4f1b-803a-98c6ce6c9aa5"
+      },
+      "source": [
+        "print(list(numbers))"
+      ],
+      "execution_count": 4,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "['one', 'six']\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "e4voX_FXqTxd",
+        "outputId": "3b5d0dde-7f15-4cdf-ee0a-abebc26fcc89"
+      },
+      "source": [
+        "words = [\"apple\", \"swim\", \"clock\", \"me\", \"kiwi\", \"banana\"]\n",
+        "things = filter(lambda x : len(x)<5, words)\n",
+        "print(list(things))"
+      ],
+      "execution_count": 5,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "['swim', 'me', 'kiwi']\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "EIh7kt-5qTuq"
+      },
+      "source": [
+        ""
+      ],
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "IMqg2XcdqTre"
+      },
+      "source": [
+        ""
+      ],
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}

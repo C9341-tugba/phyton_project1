@@ -1,0 +1,102 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Untitled25.ipynb",
+      "provenance": [],
+      "authorship_tag": "ABX9TyOzxH5iUbDwcRAVZo2FbyJf",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/C9341-tugba/phyton_project1/blob/main/donustur\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 35
+        },
+        "id": "6MpjaCUFffEm",
+        "outputId": "2fc00914-16b6-4d3e-bdae-23d8e468171b"
+      },
+      "source": [
+        "def donustur(a):\n",
+        "    b = a.split()\n",
+        "    new = \"\"\n",
+        "    for i in b:\n",
+        "        x = len(i)\n",
+        "        c = i.replace(i[1:(x-1):1], \"-\" *(x-2))\n",
+        "        new += c + \" \"\n",
+        "    return new.strip()\n",
+        "donustur(\"Raife Hoca King\")"
+      ],
+      "execution_count": 18,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "application/vnd.google.colaboratory.intrinsic+json": {
+              "type": "string"
+            },
+            "text/plain": [
+              "'R---e H--a K--g'"
+            ]
+          },
+          "metadata": {
+            "tags": []
+          },
+          "execution_count": 18
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "2mEBbtP-foOJ",
+        "outputId": "c1a07f7e-3d76-49ad-baa6-5beb3f0f03e7"
+      },
+      "source": [
+        "x = \"hello world\"\n",
+        "y = x.split(\" \")\n",
+        "a=\"\"\n",
+        "for i in y:\n",
+        "    for j in i:\n",
+        "        if not j==i[0] and not j==i[-1] :\n",
+        "            i=i.replace(j,\"-\")\n",
+        "    a+=i+\" \"\n",
+        "print(a.strip())"
+      ],
+      "execution_count": 20,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "h---o w---d\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    }
+  ]
+}

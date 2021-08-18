@@ -1,0 +1,73 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Untitled25.ipynb",
+      "provenance": [],
+      "authorship_tag": "ABX9TyOmTYgSdU0QEbdd/Z1PKTaa",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/C9341-tugba/phyton_project1/blob/main/tree\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "o0rL7PcvkZo9",
+        "outputId": "6e3ee755-621a-4dfc-b744-e23e9b3d5588"
+      },
+      "source": [
+        "for i in range(1,8):\n",
+        "    x = (7 - i) * \" \" + ((2*i-1) * \"#\")\n",
+        "    print(x)"
+      ],
+      "execution_count": 22,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "      #\n",
+            "     ###\n",
+            "    #####\n",
+            "   #######\n",
+            "  #########\n",
+            " ###########\n",
+            "#############\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "8-4B_Z27kkoB"
+      },
+      "source": [
+        ""
+      ],
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}

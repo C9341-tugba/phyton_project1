@@ -1,0 +1,241 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Untitled27.ipynb",
+      "provenance": [],
+      "authorship_tag": "ABX9TyOrlTJo/X5n3ml3God3q+E0",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/C9341-tugba/phyton_project1/blob/main/digits%20and%20letters\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "LReu5qDNzikY",
+        "outputId": "f6b95431-1237-4b57-8b84-550bba504a72"
+      },
+      "source": [
+        "string = input('please enter string :')\n",
+        "\n",
+        "digits = 0\n",
+        "letters = 0\n"
+      ],
+      "execution_count": 12,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "please enter string :schools are new open and it has 450 students\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 35
+        },
+        "id": "sJ03oseTzoAj",
+        "outputId": "f557595d-6988-4aca-fdd8-44d54b401a97"
+      },
+      "source": [
+        "string"
+      ],
+      "execution_count": 2,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "application/vnd.google.colaboratory.intrinsic+json": {
+              "type": "string"
+            },
+            "text/plain": [
+              "'schools are new open and it has 450 students'"
+            ]
+          },
+          "metadata": {
+            "tags": []
+          },
+          "execution_count": 2
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "wgCMGdk8zn8r"
+      },
+      "source": [
+        "for i in string:\n",
+        "  if i.isdigit():\n",
+        "    digits += 1\n",
+        "    "
+      ],
+      "execution_count": 3,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "aoJ7AwKjzn3k",
+        "outputId": "cc0c514a-1352-4649-99e9-7da047bb30dd"
+      },
+      "source": [
+        "digits"
+      ],
+      "execution_count": 4,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "3"
+            ]
+          },
+          "metadata": {
+            "tags": []
+          },
+          "execution_count": 4
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "6yVTkJyezn0l"
+      },
+      "source": [
+        ""
+      ],
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "c_jYq2Ak1XGq"
+      },
+      "source": [
+        "letters = 0\n",
+        "for i in string:\n",
+        "  if i.isalpha():\n",
+        "    letters += 1\n",
+        "    "
+      ],
+      "execution_count": 14,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "wSmWLbku1Uub",
+        "outputId": "c45ae0cf-663e-4cf1-90b7-99d867ac9de6"
+      },
+      "source": [
+        "letters\n",
+        "     \n",
+        "     "
+      ],
+      "execution_count": 15,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "33"
+            ]
+          },
+          "metadata": {
+            "tags": []
+          },
+          "execution_count": 15
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "WltmdepdxXTy"
+      },
+      "source": [
+        ""
+      ],
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "M0gSoLaq2UMK"
+      },
+      "source": [
+        " digits = 0\n",
+        " letters = 0\n",
+        " for i in string:\n",
+        "     if i.isdigit():\n",
+        "         digits += 1\n",
+        "     elif i.isalpha():\n",
+        "         letters += 1\n",
+        "    "
+      ],
+      "execution_count": 16,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "BpRv4GIrznxQ",
+        "outputId": "b1900eb1-4da3-49a1-8b66-089e54b94b38"
+      },
+      "source": [
+        "print(letters)\n",
+        "print(digits)"
+      ],
+      "execution_count": 17,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "33\n",
+            "3\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    }
+  ]
+}

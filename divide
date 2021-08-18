@@ -1,0 +1,189 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Untitled26.ipynb",
+      "provenance": [],
+      "authorship_tag": "ABX9TyPkPigGxhn4XUply9K77td6",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/C9341-tugba/phyton_project1/blob/main/divide\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "DdGPUA2oxWtj"
+      },
+      "source": [
+        "numbers1 = []"
+      ],
+      "execution_count": 1,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "WltmdepdxXTy"
+      },
+      "source": [
+        "numbers2 =[]\n",
+        "for i in range(100, 501):\n",
+        "  if i%7 ==0:\n",
+        "    if i%3 ==0:\n",
+        "      numbers2.append(i)\n",
+        "     \n",
+        "     "
+      ],
+      "execution_count": 7,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "y2wKb1UsxXQc",
+        "outputId": "9dfb48a9-ff7f-49ce-9ca5-8d5eab565b79"
+      },
+      "source": [
+        "numbers2"
+      ],
+      "execution_count": 8,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "[105,\n",
+              " 126,\n",
+              " 147,\n",
+              " 168,\n",
+              " 189,\n",
+              " 210,\n",
+              " 231,\n",
+              " 252,\n",
+              " 273,\n",
+              " 294,\n",
+              " 315,\n",
+              " 336,\n",
+              " 357,\n",
+              " 378,\n",
+              " 399,\n",
+              " 420,\n",
+              " 441,\n",
+              " 462,\n",
+              " 483]"
+            ]
+          },
+          "metadata": {
+            "tags": []
+          },
+          "execution_count": 8
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "EMp_NJLvxXNS"
+      },
+      "source": [
+        ""
+      ],
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "2bCVwuV5zK7e"
+      },
+      "source": [
+        "numbers3 =[]\n",
+        "for i in range(100, 501):\n",
+        "  if i%21 ==0:\n",
+        "      numbers3.append(i)\n",
+        "     \n",
+        "     "
+      ],
+      "execution_count": 9,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "OVKH_hM8xXJO",
+        "outputId": "03535693-4777-442c-87ae-e2684e57b4ef"
+      },
+      "source": [
+        "numbers3"
+      ],
+      "execution_count": 10,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "[105,\n",
+              " 126,\n",
+              " 147,\n",
+              " 168,\n",
+              " 189,\n",
+              " 210,\n",
+              " 231,\n",
+              " 252,\n",
+              " 273,\n",
+              " 294,\n",
+              " 315,\n",
+              " 336,\n",
+              " 357,\n",
+              " 378,\n",
+              " 399,\n",
+              " 420,\n",
+              " 441,\n",
+              " 462,\n",
+              " 483]"
+            ]
+          },
+          "metadata": {
+            "tags": []
+          },
+          "execution_count": 10
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "z9j6NK4QxXEh"
+      },
+      "source": [
+        ""
+      ],
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}

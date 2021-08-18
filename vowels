@@ -1,0 +1,167 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Untitled25.ipynb",
+      "provenance": [],
+      "authorship_tag": "ABX9TyOjgmr45b7KFdwrzyC/P1Yw",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/C9341-tugba/phyton_project1/blob/main/vowels\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "BZ_7gcebvaFR",
+        "outputId": "c5c3a83f-7e63-42b6-892f-45f42515961b"
+      },
+      "source": [
+        "string = input(\"Provide a string to search vowels: \")"
+      ],
+      "execution_count": 39,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Provide a string to search vowels: mini boot camp\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 35
+        },
+        "id": "D527Xt54vghe",
+        "outputId": "a948fea5-0122-4b71-c4eb-bd2974da0b92"
+      },
+      "source": [
+        "string"
+      ],
+      "execution_count": 40,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "application/vnd.google.colaboratory.intrinsic+json": {
+              "type": "string"
+            },
+            "text/plain": [
+              "'mini boot camp'"
+            ]
+          },
+          "metadata": {
+            "tags": []
+          },
+          "execution_count": 40
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "d-azZsTeu3b_",
+        "outputId": "1a94deb9-f57e-4352-e14d-2bc69deef8fc"
+      },
+      "source": [
+        "for letter in string :\n",
+        "  print(letter)"
+      ],
+      "execution_count": 42,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "m\n",
+            "i\n",
+            "n\n",
+            "i\n",
+            " \n",
+            "b\n",
+            "o\n",
+            "o\n",
+            "t\n",
+            " \n",
+            "c\n",
+            "a\n",
+            "m\n",
+            "p\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "jphZad8Tmetb"
+      },
+      "source": [
+        "found = []\n",
+        "\n",
+        "for letter in string:\n",
+        "    if letter in vowels:\n",
+        "        if letter not in found:\n",
+        "            found.append(letter)  "
+      ],
+      "execution_count": 41,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "8StAGlUGwWvf",
+        "outputId": "5a2a0322-db1a-492c-a4f4-a0d75a9f744d"
+      },
+      "source": [
+        "found"
+      ],
+      "execution_count": 43,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "['i', 'o', 'a']"
+            ]
+          },
+          "metadata": {
+            "tags": []
+          },
+          "execution_count": 43
+        }
+      ]
+    }
+  ]
+}

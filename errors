@@ -1,0 +1,728 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Untitled38.ipynb",
+      "provenance": [],
+      "history_visible": true,
+      "authorship_tag": "ABX9TyNa8QmUDJ6TcTDlrz6ltKRr",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/C9341-tugba/phyton_project1/blob/main/errors\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 129
+        },
+        "id": "uFsq70frCaYH",
+        "outputId": "c54a7c8c-3ca0-4267-80ed-e2208b853864"
+      },
+      "source": [
+        "while True:\n",
+        "    no_one = int(input(\"The first number please : \"))\n",
+        "    no_two = int(input(\"The second number please : \"))\n",
+        "    try:\n",
+        "        division = no_one / no_two  # normal part of the program\n",
+        "    except ZeroDivisionError:\n",
+        "        print(\"You can't divide by zero! Try again.\")  # executes when division by zero\n",
+        "    else:\n",
+        "        print(\"The result of the division is : \", division)  # executes if there is no exception\n",
+        "    finally:\n",
+        "        print(\"Thanks for using our mini divison calculator! Come again!\")\n",
+        "        break  # exits the while loop"
+      ],
+      "execution_count": 3,
+      "outputs": [
+        {
+          "output_type": "error",
+          "ename": "SyntaxError",
+          "evalue": "ignored",
+          "traceback": [
+            "\u001b[0;36m  File \u001b[0;32m\"<ipython-input-3-e881fda6db15>\"\u001b[0;36m, line \u001b[0;32m2\u001b[0m\n\u001b[0;31m    no_one = int(input(\"The first number please : \"))\u001b[0m\n\u001b[0m         ^\u001b[0m\n\u001b[0;31mSyntaxError\u001b[0m\u001b[0;31m:\u001b[0m invalid character in identifier\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "eH8dHI5WDMaV",
+        "outputId": "c39a63f2-1c84-4f8e-c75b-e1ff034578d2"
+      },
+      "source": [
+        "while True:\n",
+        "    no_one = int(input(\"The first number please : \"))\n",
+        "    no_two = int(input(\"The second number please : \"))\n",
+        "    try:\n",
+        "        division = no_one / no_two  # normal part of the program\n",
+        "    except ZeroDivisionError:\n",
+        "        print(\"You can't divide by zero! Try again.\")  # executes when division by zero\n",
+        "    else:\n",
+        "        print(\"The result of the division is : \", division)  # executes if there is no exception\n",
+        "    finally:\n",
+        "        print(\"Thanks for using our mini divison calculator! Come again!\")\n",
+        "        break  # exits the while loop"
+      ],
+      "execution_count": 4,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "The first number please : 5\n",
+            "The second number please : 6\n",
+            "The result of the division is :  0.8333333333333334\n",
+            "Thanks for using our mini divison calculator! Come again!\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 129
+        },
+        "id": "3CcvQK06HKV3",
+        "outputId": "d3127dfa-9ed0-4f28-ac08-fab497defddb"
+      },
+      "source": [
+        "try:\n",
+        "   x = 2/0\n",
+        "except ZeroDivisionError:\n",
+        "    print('Attempt to divide by zero')\n",
+        "except:\n",
+        "    print('Something else went wrong')"
+      ],
+      "execution_count": 6,
+      "outputs": [
+        {
+          "output_type": "error",
+          "ename": "SyntaxError",
+          "evalue": "ignored",
+          "traceback": [
+            "\u001b[0;36m  File \u001b[0;32m\"<ipython-input-6-5b8dffb42e79>\"\u001b[0;36m, line \u001b[0;32m2\u001b[0m\n\u001b[0;31m    x = 2/0\u001b[0m\n\u001b[0m    ^\u001b[0m\n\u001b[0;31mSyntaxError\u001b[0m\u001b[0;31m:\u001b[0m invalid character in identifier\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 263
+        },
+        "id": "TYdcDbW1Tyxa",
+        "outputId": "2eee769e-30bd-4545-9e06-308cdf466a14"
+      },
+      "source": [
+        "count = 3\n",
+        "\n",
+        "while count > 0 :\n",
+        "    \n",
+        "    try :\n",
+        "        index = int(input(\"Pick an index number to choose your favorite fruit :\"))\n",
+        "        print(\"Your favorite fruit is : \", fruits[index])\n",
+        "        \n",
+        "    except IndexError :\n",
+        "        count -= 1\n",
+        "        print(f\"There is no such an Index. You have {count} tries remaining. Try again!\")\n",
+        "        \n",
+        "    except ValueError :\n",
+        "        count -= 1\n",
+        "        print(f\"You should enter integer. You have {count} tries remaining. Try again!\")\n",
+        "        \n",
+        "    else :\n",
+        "        print(\"Congrats! You have entered a valid input.\")\n",
+        "        break\n",
+        "    finally :\n",
+        "        print(\"Our fruits are always fresh!\")"
+      ],
+      "execution_count": 7,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Pick an index number to choose your favorite fruit :5\n",
+            "Our fruits are always fresh!\n"
+          ],
+          "name": "stdout"
+        },
+        {
+          "output_type": "error",
+          "ename": "NameError",
+          "evalue": "ignored",
+          "traceback": [
+            "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+            "\u001b[0;31mNameError\u001b[0m                                 Traceback (most recent call last)",
+            "\u001b[0;32m<ipython-input-7-b0a9d99cd8c1>\u001b[0m in \u001b[0;36m<module>\u001b[0;34m()\u001b[0m\n\u001b[1;32m      5\u001b[0m     \u001b[0;32mtry\u001b[0m \u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      6\u001b[0m         \u001b[0mindex\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0mint\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0minput\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m\"Pick an index number to choose your favorite fruit :\"\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m----> 7\u001b[0;31m         \u001b[0mprint\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m\"Your favorite fruit is : \"\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mfruits\u001b[0m\u001b[0;34m[\u001b[0m\u001b[0mindex\u001b[0m\u001b[0;34m]\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m      8\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      9\u001b[0m     \u001b[0;32mexcept\u001b[0m \u001b[0mIndexError\u001b[0m \u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+            "\u001b[0;31mNameError\u001b[0m: name 'fruits' is not defined"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "bmHIuzbcUwL7"
+      },
+      "source": [
+        "import os"
+      ],
+      "execution_count": 8,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "zDUYn1HSU2Y3"
+      },
+      "source": [
+        "dosya = os.listdir"
+      ],
+      "execution_count": 9,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "ovWQ05vRU2WD"
+      },
+      "source": [
+        "import shutil"
+      ],
+      "execution_count": 11,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "Mr5HvNzCU2Tl"
+      },
+      "source": [
+        ""
+      ],
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "8tC_1XNAU2OU",
+        "outputId": "d4e8e366-0b62-4d7a-f4ff-a91ee3896ce1"
+      },
+      "source": [
+        "file = open(\"fishes.txt\", \"r\")\n",
+        "\n",
+        "print(file.read())\n",
+        "\n",
+        "\n",
+        "file.close()\n",
+        "\n",
+        "\n"
+      ],
+      "execution_count": 23,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Orca is a kind of Dolphin.\n",
+            "Blue Whale is the largest animal known on earth.\n",
+            "Sharks are the sister group to the Rays (batoids).\n",
+            "The Tuna Fish can weigh up to 260 kg.\n",
+            "Squid and Octopus are in the same class.\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "ROwBFI6ecyXz",
+        "outputId": "8253f875-2de7-4835-b545-b7143ce29c97"
+      },
+      "source": [
+        "file = open(\"fishes.txt\", \"r\")\n",
+        "\n",
+        "print(file.read(33))\n",
+        "\n",
+        "file.close()"
+      ],
+      "execution_count": 25,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Orca is a kind of Dolphin.\n",
+            "Blue W\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "v84g1Y6EcyU0"
+      },
+      "source": [
+        "file = open(\"fishes.txt\", \"r\")\n",
+        "\n",
+        "content=file.read()\n",
+        "\n",
+        "file.close()"
+      ],
+      "execution_count": 28,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 69
+        },
+        "id": "knEgwoP-cySY",
+        "outputId": "a69e2484-5d66-4cee-e7ad-356c2de23e01"
+      },
+      "source": [
+        "content"
+      ],
+      "execution_count": 29,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "application/vnd.google.colaboratory.intrinsic+json": {
+              "type": "string"
+            },
+            "text/plain": [
+              "'Orca is a kind of Dolphin.\\nBlue Whale is the largest animal known on earth.\\nSharks are the sister group to the Rays (batoids).\\nThe Tuna Fish can weigh up to 260 kg.\\nSquid and Octopus are in the same class.'"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 29
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "CTDY751QcyPv",
+        "outputId": "3a6aafe9-18a2-48a6-c813-5655cff41155"
+      },
+      "source": [
+        "len(content)"
+      ],
+      "execution_count": 30,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "205"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 30
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 35
+        },
+        "id": "yrYc07WtcyMk",
+        "outputId": "c66b8a7b-12fb-4650-8824-3291672438f7"
+      },
+      "source": [
+        "content[:33]"
+      ],
+      "execution_count": 31,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "application/vnd.google.colaboratory.intrinsic+json": {
+              "type": "string"
+            },
+            "text/plain": [
+              "'Orca is a kind of Dolphin.\\nBlue W'"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 31
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Lk6_zsGbfEt5",
+        "outputId": "84f315b5-3203-4311-9d21-cf0863ae10fc"
+      },
+      "source": [
+        "file = open(\"fishes.txt\", \"r\")\n",
+        "\n",
+        "print(file.read(33))\n",
+        "print(file.read(33))\n",
+        "\n",
+        "file.close()"
+      ],
+      "execution_count": 32,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Orca is a kind of Dolphin.\n",
+            "Blue W\n",
+            "hale is the largest animal known \n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "1KkFKmyNfErc",
+        "outputId": "c68629e3-5867-4bb9-f7ce-0d02bd4b69db"
+      },
+      "source": [
+        "file = open(\"fishes.txt\", \"r\")\n",
+        "\n",
+        "print(file.read(33))\n",
+        "print(file.read(33))\n",
+        "\n",
+        "file.seek(0)\n",
+        "print(file.read(33))\n",
+        "\n",
+        "file.close()"
+      ],
+      "execution_count": 33,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Orca is a kind of Dolphin.\n",
+            "Blue W\n",
+            "hale is the largest animal known \n",
+            "Orca is a kind of Dolphin.\n",
+            "Blue W\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "xOPVWls7fEo0",
+        "outputId": "46eb329c-9186-40c8-b2f8-730724e3df97"
+      },
+      "source": [
+        "file = open(\"fishes.txt\", \"r\")\n",
+        "\n",
+        "print(file.read(33))\n",
+        "print(file.read(33))\n",
+        "\n",
+        "file.seek(0)\n",
+        "print(file.read(33))\n",
+        "print(file.tell())\n",
+        "\n",
+        "file.close()"
+      ],
+      "execution_count": 34,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Orca is a kind of Dolphin.\n",
+            "Blue W\n",
+            "hale is the largest animal known \n",
+            "Orca is a kind of Dolphin.\n",
+            "Blue W\n",
+            "34\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "LLY7o6NIfEl0",
+        "outputId": "1cd92823-ad06-4605-f741-9310f46e36ef"
+      },
+      "source": [
+        "file = open(\"fishes.txt\", \"r\")\n",
+        "\n",
+        "print(file.read(33))\n",
+        "print(file.read(15))\n",
+        "print(file.tell())\n",
+        "\n",
+        "file.seek(0)\n",
+        "\n",
+        "print(file.read(33))\n",
+        "print(file.tell())\n",
+        "\n",
+        "file.close()"
+      ],
+      "execution_count": 35,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Orca is a kind of Dolphin.\n",
+            "Blue W\n",
+            "hale is the lar\n",
+            "49\n",
+            "Orca is a kind of Dolphin.\n",
+            "Blue W\n",
+            "34\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "ql-eBYL3gH3G",
+        "outputId": "bd6c6e83-dbf3-4297-cb00-b14165b5f9e3"
+      },
+      "source": [
+        "rumi= open(\"rumi.txt\", \"r\")\n",
+        "print(rumi.read(35))\n",
+        "print(rumi.read(13))\n",
+        "print(rumi.tell())\n",
+        "rumi.seek(15)\n",
+        "print(rumi.read(21))\n",
+        "\n",
+        "rumi.close( )"
+      ],
+      "execution_count": 39,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "I want to sing\n",
+            "Like the birds sing,\n",
+            "\n",
+            "Not worrying\n",
+            "50\n",
+            "\n",
+            "Like the birds sing,\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "SfZ9azT0gH1N"
+      },
+      "source": [
+        "file = open(\"fishes.txt\", \"r\")\n",
+        "\n",
+        "part_1 = file.readline(13)\n",
+        "part_2 = file.readline(13)\n",
+        "part_3 = file.readline(13)\n",
+        "part_4 = file.readline(13)\n",
+        "\n",
+        "file.close()"
+      ],
+      "execution_count": 59,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 35
+        },
+        "id": "3BU4QCuRgHyv",
+        "outputId": "f07862ff-bc64-4bd7-8f5b-5b231d257a4b"
+      },
+      "source": [
+        "part_1"
+      ],
+      "execution_count": 60,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "application/vnd.google.colaboratory.intrinsic+json": {
+              "type": "string"
+            },
+            "text/plain": [
+              "'Orca is a kin'"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 60
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 35
+        },
+        "id": "hSrx709JgHs6",
+        "outputId": "8afcae23-acca-4469-a70d-d57f134cf8f5"
+      },
+      "source": [
+        "part_2"
+      ],
+      "execution_count": 61,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "application/vnd.google.colaboratory.intrinsic+json": {
+              "type": "string"
+            },
+            "text/plain": [
+              "'d of Dolphin.'"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 61
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 35
+        },
+        "id": "V6aWJdzun2Dj",
+        "outputId": "0c257844-d5d9-4d33-e915-38fc50ae7c73"
+      },
+      "source": [
+        "part_3"
+      ],
+      "execution_count": 62,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "application/vnd.google.colaboratory.intrinsic+json": {
+              "type": "string"
+            },
+            "text/plain": [
+              "'\\n'"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 62
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "B4wtKBYan2Ap"
+      },
+      "source": [
+        ""
+      ],
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "gmZwYIUwn18-"
+      },
+      "source": [
+        ""
+      ],
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "T8Qv6cuzn13Y"
+      },
+      "source": [
+        ""
+      ],
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "r6TNiGBln10j"
+      },
+      "source": [
+        ""
+      ],
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
